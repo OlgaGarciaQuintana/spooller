@@ -21,6 +21,9 @@
                             <a href="form-update.html" class="btn btn-warning w-100">Actualizar Usuario</a>
                         </li>
                         <li class="list-group-item text-center">
+                            <a href="get1.html" class="btn btn-danger w-100">Ver Un Usuario</a>
+                        </li>
+                        <li class="list-group-item text-center">
                             <a href="usuario" class="btn btn-info w-100">Ver Todos los Usuarios</a>
                         </li>
                     </ul>
