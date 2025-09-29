@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Buscar usuario por ID</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script>
+    function buscarUsuario() {
+        var id = document.getElementById('id').value;
+        if (id) {
+            window.location.href = 'usuario?id=' + encodeURIComponent(id);
+        } else {
+            alert('Introduce un ID válido');
+        }
+        return false;
+    }
+    </script>
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h2 class="mb-4">Buscar usuario por ID</h2>
+        <form onsubmit="return buscarUsuario();" class="mb-3">
+            <div class="mb-3">
+                <label for="id" class="form-label">ID:</label>
+                <input type="number" id="id" name="id" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </form>
+        <a href="index.jsp" class="btn btn-secondary">Volver al inicio</a>
+    </div>
+</body>
+</html>
